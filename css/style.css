@@ -3,10 +3,15 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 }
-body
-{
-	background-image: url("../img/background.jpeg");
-	background-attachment: fixed;/*背景图片不会固定不会因页面滚动而重复*/
-	background-repeat: no-repeat;/*使图片不管任何大小都不会重复*/
-	background-size: 100%;/*改变背景图的长和宽*/
+body{
+    width:100vw;
+    height:100vh;
+    padding: 0;
+    margin: 0;
+    background-image: url("../img/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-attachment: fixed;
+    -webkit-background-attachment: fixed;
 }
