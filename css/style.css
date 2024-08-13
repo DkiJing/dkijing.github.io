@@ -4,16 +4,65 @@ img {
 	margin-right: auto;
 }
 body:after {
-      content:"";
-      position:fixed; /* stretch a fixed position to the whole screen */
-      top:0;
-      height:100vh; /* fix for mobile browser address bar appearing disappearing */
-      left:0;
-      right:0;
-      z-index:-1; /* needed to keep in the background */
-      background: url(../img/background.jpeg) center center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+    content:"";
+    position:fixed; /* stretch a fixed position to the whole screen */
+	top:0;
+    height:100vh; /* fix for mobile browser address bar appearing disappearing */
+    left:0;
+    right:0;
+    z-index:-1; /* needed to keep in the background */
+    background: url(../img/cross.jpg) center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.topnav {
+  position: relative;
+  overflow: hidden;
+}
+
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ffd100;
+  color: black;
+}
+
+.topnav a.active {
+  color: black;
+}
+
+.topnav-centered a {
+	float: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.topnav-right {
+  float: right;
+}
+
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+  
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
 }
